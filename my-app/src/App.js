@@ -1,4 +1,5 @@
-import logo from './logo.svg';
+import {BrowserRouter, Routes,Route}  from "react-router-dom"
+
 import './App.css';
 import Home from './Cmponent/Home';
 import About from './Cmponent/About';
@@ -10,6 +11,7 @@ import Footer from './Cmponent/Footer';
 function App() {
   return (
     <div className="App">
+        <BrowserRouter>
         <Routes>
         <Route     path='/' element={<Home/>}/>
           <Route  path='/about' element={<About/>}/>
@@ -17,7 +19,7 @@ function App() {
           <Route  path='/contact' element={<Contact/>}/>
           <Route  path='/testimoinal' element={<Testimonial/>}/>
         </Routes> 
-
+        </BrowserRouter>
 
 
 
