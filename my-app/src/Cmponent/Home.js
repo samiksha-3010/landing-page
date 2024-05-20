@@ -5,7 +5,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import { FiArrowRight } from "react-icons/fi";
-import "../Cmponent/Home.css"
+import "./Home.css"
 
 const Home = () => {
   return (
